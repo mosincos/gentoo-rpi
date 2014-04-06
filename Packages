@@ -9,9 +9,9 @@ CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/dconf /etc/env.d /etc/fonts/
 FEATURES: assume-digests binpkg-logs buildpkg config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix
-PACKAGES: 379
+PACKAGES: 393
 PROFILE: default/linux/arm/13.0/armv6j
-TIMESTAMP: 1396610269
+TIMESTAMP: 1396744141
 USE: acl apache2_modules_\ apache2_modules_access_compat apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dri elibc_glibc fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ublox gpsd_protocols_ubx iconv input_devices_evdev input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_3 readline ruby_targets_ruby19 ruby_targets_ruby20 session ssl tcpd unicode userland_GNU video_cards_dummy video_cards_exynos video_cards_fbdev video_cards_omap video_cards_omapfb video_cards_v4l xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 USE_EXPAND: ABI_MIPS ABI_PPC ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_PPC ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
@@ -497,6 +497,22 @@ SHA1: b2138d65451bb7f800588c5f01e533c3ebc58599
 SIZE: 34702
 USE: arm elibc_glibc kernel_linux userland_GNU
 
+BUILD_TIME: 1396732800
+CPV: app-portage/gentoolkit-0.3.0.8-r2
+DEFINED_PHASES: compile configure install postinst prepare test
+DEPEND: sys-apps/portage >=sys-apps/coreutils-8.5 >=dev-lang/python-2.7.5-r2:2.7[xml(+)] >=dev-lang/python-3.3.2-r2:3.3[xml(+)] dev-lang/python-exec:2/2=[python_targets_python2_7(-),python_targets_python3_3(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)]
+DESC: Collection of administration scripts for Gentoo
+EAPI: 5
+IUSE: python_targets_python2_6 python_targets_python2_7 python_targets_python3_2 python_targets_python3_3 python_targets_pypy2_0
+KEYWORDS: alpha amd64 arm arm64 hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: a96fd927e44734d5bc9088322d581a50
+MTIME: 1396732826
+RDEPEND: sys-apps/portage !<=app-portage/gentoolkit-dev-0.2.7 || ( >=sys-apps/coreutils-8.15 app-misc/realpath sys-freebsd/freebsd-bin ) sys-apps/gawk sys-apps/grep virtual/python-argparse[python_targets_python2_7(-),python_targets_python3_3(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)] >=dev-lang/python-2.7.5-r2:2.7[xml(+)] >=dev-lang/python-3.3.2-r2:3.3[xml(+)] dev-lang/python-exec:2/2=[python_targets_python2_7(-),python_targets_python3_3(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)]
+SHA1: 7c704bae09e5672c7b07f7e9e9761e0395afd0fc
+SIZE: 6725694
+USE: arm elibc_glibc kernel_linux python_targets_python2_7 python_targets_python3_3 userland_GNU
+
 BUILD_TIME: 1396296799
 CPV: app-portage/layman-2.0.0-r1
 DEFINED_PHASES: compile configure install postinst prepare test
@@ -803,6 +819,23 @@ SHA1: 59daea11426bbdeecc116310088c4c6ddcb55b0f
 SIZE: 26104
 USE: arm elibc_glibc kernel_linux userland_GNU
 
+BUILD_TIME: 1396646811
+CPV: dev-db/phpmyadmin-4.1.8
+DEFINED_PHASES: install postinst prerm setup
+DEPEND: || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESC: Web-based administration for MySQL database in PHP
+EAPI: 4
+IUSE: setup vhosts
+KEYWORDS: ~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x64-macos ~x86-macos
+LICENSE: GPL-2
+MD5: 731ce49d1275438eb7f114fd9eaf0632
+MTIME: 1396646845
+RDEPEND: dev-lang/php[crypt,ctype,filter,json,session,unicode] || ( dev-lang/php[mysqli] dev-lang/php[mysql] ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SHA1: fc1a57d7ade27be26cbca36be55f3457f7107fa9
+SIZE: 6413601
+SLOT: 4.1.8
+USE: arm elibc_glibc kernel_linux userland_GNU
+
 BUILD_TIME: 1396332459
 CPV: dev-db/sqlite-3.8.3.1
 DEFINED_PHASES: compile configure install prepare setup test
@@ -838,22 +871,22 @@ SIZE: 11785611
 SLOT: 0/5.16
 USE: arm berkdb elibc_glibc gdbm kernel_linux userland_GNU
 
-BUILD_TIME: 1396556725
+BUILD_TIME: 1396708450
 CPV: dev-lang/php-5.5.10
 DEFINED_PHASES: compile configure install postinst prepare prerm setup test
-DEPEND: >=app-admin/eselect-php-0.7.1-r3[apache2] >=dev-libs/libpcre-8.32[unicode] www-servers/apache[-threads] =sys-libs/db-4* app-arch/bzip2 >=dev-libs/libmcrypt-2.4 virtual/jpeg:0 media-libs/libpng:0/16= sys-libs/zlib >=sys-libs/gdbm-1.8.0 virtual/libiconv sys-devel/gettext sys-libs/readline >=dev-libs/libxml2-2.6.8 >=dev-libs/openssl-0.9.7 dev-libs/oniguruma >=dev-libs/libxml2-2.6.8 sys-libs/zlib virtual/mta sys-devel/flex >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 =www-servers/apache-2* !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DEPEND: >=app-admin/eselect-php-0.7.1-r3[apache2] >=dev-libs/libpcre-8.32[unicode] www-servers/apache[-threads] =sys-libs/db-4* app-arch/bzip2 >=dev-libs/libmcrypt-2.4 >=net-misc/curl-7.10.5 virtual/jpeg:0 media-libs/libpng:0/16= sys-libs/zlib >=sys-libs/gdbm-1.8.0 virtual/libiconv sys-devel/gettext sys-libs/readline >=dev-libs/libxml2-2.6.8 >=dev-libs/openssl-0.9.7 dev-libs/oniguruma >=dev-libs/libxml2-2.6.8 >=dev-libs/libxml2-2.6.8 dev-libs/libxslt >=dev-libs/libxml2-2.6.8 sys-libs/zlib sys-libs/zlib virtual/mta sys-devel/flex >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 =www-servers/apache-2* !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
 DESC: The PHP language runtime engine: CLI, CGI, FPM/FastCGI, Apache2 and embed SAPIs.
 EAPI: 5
 IUSE: embed +cli cgi fpm apache2 threads bcmath berkdb bzip2 calendar cdb cjk crypt +ctype curl debug enchant exif frontbase +fileinfo +filter firebird flatfile ftp gd gdbm gmp +hash +iconv imap inifile intl iodbc ipv6 +json kerberos ldap ldap-sasl libedit mhash mssql mysql libmysqlclient mysqli nls oci8-instant-client odbc +opcache pcntl pdo +phar +posix postgres qdbm readline recode selinux +session sharedmem +simplexml snmp soap sockets spell sqlite ssl sybase-ct sysvipc systemd tidy +tokenizer truetype unicode wddx +xml xmlreader xmlwriter xmlrpc xpm xslt zip zlib apache2
 KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~s390 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
 LICENSE: PHP-3
-MD5: bbc323af949e22332784eefeadb4acba
-MTIME: 1396608848
-RDEPEND: >=app-admin/eselect-php-0.7.1-r3[apache2] >=dev-libs/libpcre-8.32[unicode] www-servers/apache[-threads] =sys-libs/db-4* app-arch/bzip2 >=dev-libs/libmcrypt-2.4 virtual/jpeg:0 media-libs/libpng:0/16= sys-libs/zlib >=sys-libs/gdbm-1.8.0 virtual/libiconv sys-devel/gettext sys-libs/readline >=dev-libs/libxml2-2.6.8 >=dev-libs/openssl-0.9.7 dev-libs/oniguruma >=dev-libs/libxml2-2.6.8 sys-libs/zlib virtual/mta =www-servers/apache-2*
-SHA1: b36613fd8138876202df4765cccf1112f41393be
-SIZE: 8339026
+MD5: 4c3cede18828cc0b0ed8fc66d5f92ee6
+MTIME: 1396708486
+RDEPEND: >=app-admin/eselect-php-0.7.1-r3[apache2] >=dev-libs/libpcre-8.32[unicode] www-servers/apache[-threads] =sys-libs/db-4* app-arch/bzip2 >=dev-libs/libmcrypt-2.4 >=net-misc/curl-7.10.5 virtual/jpeg:0 media-libs/libpng:0/16= sys-libs/zlib >=sys-libs/gdbm-1.8.0 virtual/libiconv sys-devel/gettext sys-libs/readline >=dev-libs/libxml2-2.6.8 >=dev-libs/openssl-0.9.7 dev-libs/oniguruma >=dev-libs/libxml2-2.6.8 >=dev-libs/libxml2-2.6.8 dev-libs/libxslt >=dev-libs/libxml2-2.6.8 sys-libs/zlib sys-libs/zlib virtual/mta =www-servers/apache-2*
+SHA1: 8af6330f96d51e8a43bb812c13f3acda07e7fc68
+SIZE: 8558998
 SLOT: 5.5
-USE: apache2 arm berkdb bzip2 cgi cli crypt ctype elibc_glibc fileinfo filter gd gdbm hash iconv ipv6 json kernel_linux mysql mysqli nls opcache pdo phar posix readline session simplexml sockets ssl tokenizer unicode userland_GNU xml zlib
+USE: apache2 arm berkdb bzip2 cgi cli crypt ctype curl elibc_glibc fileinfo filter gd gdbm hash iconv ipv6 json kernel_linux mysql mysqli nls opcache pdo phar posix readline session simplexml sockets ssl tokenizer unicode userland_GNU xml xmlwriter xslt zip zlib
 
 BUILD_TIME: 1396202378
 CPV: dev-lang/python-2.7.5-r3
@@ -2356,6 +2389,38 @@ SHA1: 9192bb43b4b46b1dd6fd5a1edb6a1f680ea5da2a
 SIZE: 6153
 USE: arm elibc_glibc kernel_linux userland_GNU
 
+BUILD_TIME: 1396725127
+CPV: dev-php/pecl-apcu-4.0.2
+DEFINED_PHASES: compile configure install postinst prepare test unpack
+DEPEND: !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 dev-lang/php:5.5
+DESC: Stripped down version of APC supporting only user cache.
+EAPI: 5
+IUSE: +mmap lock_pthreadmutex +lock_pthreadrw lock_spinlock lock_semaphore php_targets_php5-5 php_targets_php5-3 php_targets_php5-4
+KEYWORDS: ~amd64 ~x86
+LICENSE: PHP-3.01
+MD5: 58cbd0bcefa73b6d0cf47363c85b208a
+MTIME: 1396725143
+RDEPEND: dev-lang/php:5.5
+SHA1: 40bc6225c507a92aaa8e3d98d7ee819b600fdaa2
+SIZE: 107706
+USE: arm elibc_glibc kernel_linux lock_pthreadrw mmap php_targets_php5-5 userland_GNU
+
+BUILD_TIME: 1396724676
+CPV: dev-php/pecl-uploadprogress-1.0.3.1-r1
+DEFINED_PHASES: compile configure install postinst prepare test unpack
+DEPEND: !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 dev-lang/php:5.5
+DESC: An extension to track progress of a file upload.
+EAPI: 5
+IUSE: php_targets_php5-5 php_targets_php5-4
+KEYWORDS: ~amd64 ~x86
+LICENSE: PHP-3.01
+MD5: ce489290de596fdcd1d597b47037bd5b
+MTIME: 1396724694
+RDEPEND: dev-lang/php[apache2] dev-lang/php:5.5
+SHA1: 166ac452b25d929df472fd54c5842677ba4d0570
+SIZE: 36643
+USE: arm elibc_glibc kernel_linux php_targets_php5-5 userland_GNU
+
 BUILD_TIME: 1396342229
 CPV: dev-qt/qtcore-4.8.5-r1
 DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
@@ -2515,6 +2580,48 @@ RDEPEND: dev-libs/openssl sys-libs/zlib dev-libs/libpcre dev-lang/perl:0/5.16=[-
 SHA1: c58d20761509a85baefd6802fad9baa2dc322909
 SIZE: 6521194
 USE: arm blksha1 curl elibc_glibc gpg iconv kernel_linux nls pcre perl python python_single_target_python2_7 python_targets_python2_7 threads userland_GNU webdav
+
+BUILD_TIME: 1396621384
+CPV: mail-client/mailx-8.1.2.20050715-r6
+DEFINED_PHASES: compile install postinst unpack
+DEPEND: >=net-libs/liblockfile-1.03 virtual/mta mail-client/mailx-support
+DESC: The /bin/mail program, which is used to send mail via shell scripts
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: BSD
+MD5: bbe868d4b25e85524e7bf96e16708049
+MTIME: 1396621398
+RDEPEND: >=net-libs/liblockfile-1.03 virtual/mta mail-client/mailx-support !mail-client/nail !net-mail/mailutils
+SHA1: c461896c8c92816bd1056035fcde59332dae4dd5
+SIZE: 74909
+USE: arm elibc_glibc kernel_linux userland_GNU
+
+BUILD_TIME: 1396621019
+CPV: mail-client/mailx-support-20060102-r1
+DEFINED_PHASES: compile install unpack
+DESC: Provides lockspool utility
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: BSD
+MD5: 21cc7ece14b00df6ee4a88a402e1fda3
+MTIME: 1396621034
+SHA1: b76bf9c321ed88f08890744943c4fffb8a641081
+SIZE: 24056
+USE: arm elibc_glibc kernel_linux userland_GNU
+
+BUILD_TIME: 1396616800
+CPV: mail-client/mutt-1.5.22-r3
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: app-misc/mime-types virtual/libintl sys-libs/gdbm >=sys-libs/ncurses-5.2 net-mail/mailbase !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A small but very powerful text-based mail client
+EAPI: 5
+IUSE: berkdb crypt debug doc gdbm gnutls gpg idn imap kerberos mbox nls nntp pop qdbm sasl selinux sidebar slang smime smtp ssl tokyocabinet
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 ~sparc x86 ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 64b6e09664894888af1196f14d5c725b
+MTIME: 1396616820
+RDEPEND: app-misc/mime-types virtual/libintl sys-libs/gdbm >=sys-libs/ncurses-5.2
+SHA1: 8b7379bfdb5afc5ba98a51e494b507800c5f482f
+SIZE: 1252991
+USE: arm berkdb crypt elibc_glibc gdbm kernel_linux nls ssl userland_GNU
 
 BUILD_TIME: 1396559502
 CPV: mail-client/roundcube-0.9.5
@@ -2887,6 +2994,20 @@ SHA1: 9c75c5bf1816b4199272953ab79168e7108bb821
 SIZE: 1212940
 USE: arm crypt elibc_glibc kernel_linux server ssl userland_GNU
 
+BUILD_TIME: 1396621211
+CPV: net-libs/liblockfile-1.09
+DEFINED_PHASES: configure install prepare setup
+DEPEND: !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Implements functions designed to lock the standard mailboxes
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2
+MD5: f7754822f40e150b7d52e5d9c5f1793f
+MTIME: 1396621227
+SHA1: f5ff6009e1ea992961cc80842d25aa163de226d0
+SIZE: 49866
+USE: arm elibc_glibc kernel_linux userland_GNU
+
 BUILD_TIME: 1396526229
 CPV: net-libs/libnfsidmap-0.24
 DEFINED_PHASES: configure install prepare
@@ -3141,6 +3262,22 @@ RESTRICT: test
 SHA1: 64821ef10ccb61ce98ac3d536bf46a6b5cd9a2a5
 SIZE: 7568015
 USE: acl arm elibc_glibc kernel_linux linguas_ca linguas_es linguas_fr linguas_it linguas_ja linguas_ru pam python_single_target_python2_7 python_targets_python2_7 ssl threads userland_GNU
+
+BUILD_TIME: 1396744101
+CPV: net-proxy/squid-3.3.8
+DEFINED_PHASES: configure install postinst prepare pretend setup
+DEPEND: virtual/pam dev-libs/openssl >=sys-libs/db-4 sys-devel/libtool dev-lang/perl sys-devel/libtool sys-apps/ed !<sys-devel/gettext-0.18.1.1-r3 =sys-devel/automake-1.12* >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A full-featured web proxy cache
+EAPI: 5
+IUSE: caps ipv6 pam ldap samba sasl kerberos nis radius ssl snmp selinux logrotate test ecap icap-client ssl-crtd mysql postgres sqlite qos tproxy pf-transparent ipf-transparent kqueue elibc_uclibc kernel_linux
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: c4466c1f03b54a2b24b12236f0042a88
+MTIME: 1396744138
+RDEPEND: virtual/pam dev-libs/openssl >=sys-libs/db-4 sys-devel/libtool dev-lang/perl sys-devel/libtool !<=sci-biology/meme-4.8.1-r1
+SHA1: c27923a2f689c30d8067a92811f15a7f8643db83
+SIZE: 2119413
+USE: arm elibc_glibc ipv6 kernel_linux pam ssl userland_GNU
 
 BUILD_TIME: 1389665915
 CPV: perl-core/Archive-Tar-1.900.0
@@ -3731,6 +3868,20 @@ SHA1: 97dae01121d485789e9face7f4e66be02788cd98
 SIZE: 325763
 USE: arm elibc_glibc kernel_linux nls userland_GNU
 
+BUILD_TIME: 1396734104
+CPV: sys-apps/ed-1.6
+DEFINED_PHASES: configure prepare
+DEPEND: sys-apps/texinfo
+DESC: Your basic line editor
+EAPI: 4
+KEYWORDS: alpha amd64 arm arm64 hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: d1ad4429a151429f5d45626790c3fdca
+MTIME: 1396734123
+SHA1: bec0f8653791c37c5373df617337812b78fd612b
+SIZE: 65564
+USE: arm elibc_glibc kernel_linux userland_GNU
+
 BUILD_TIME: 1389666788
 CPV: sys-apps/file-5.15
 DEFINED_PHASES: compile configure install prepare
@@ -4199,6 +4350,21 @@ RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-9 >=sys-devel/autoconf-2.62 
 SHA1: e9c39526d60533cf4da5df9a59d275b3f252377e
 SIZE: 613361
 SLOT: 1.11
+USE: arm elibc_glibc kernel_linux userland_GNU
+
+BUILD_TIME: 1396734298
+CPV: sys-devel/automake-1.12.6
+DEFINED_PHASES: compile install unpack
+DEPEND: dev-lang/perl >=sys-devel/automake-wrapper-9 >=sys-devel/autoconf-2.62 sys-devel/gnuconfig sys-apps/help2man
+DESC: Used to generate Makefile.in from Makefile.am
+KEYWORDS: alpha amd64 arm arm64 hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 419215d900d3b0d6e854a8b8e3d3e2e4
+MTIME: 1396734317
+RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-9 >=sys-devel/autoconf-2.62 sys-devel/gnuconfig
+SHA1: c1909d5e4c409035de7df95d9b637548a96fe598
+SIZE: 711153
+SLOT: 1.12
 USE: arm elibc_glibc kernel_linux userland_GNU
 
 BUILD_TIME: 1389672178
@@ -5646,6 +5812,57 @@ MTIME: 1396610254
 RDEPEND: || ( sys-devel/bison dev-util/byacc dev-util/yacc )
 SHA1: db734cdbadd9b382721dc77131c91f8db9265eeb
 SIZE: 5331
+USE: arm elibc_glibc kernel_linux userland_GNU
+
+BUILD_TIME: 1396725343
+CPV: www-apps/drupal-7.26
+DEFINED_PHASES: install postinst prerm setup
+DEPEND: || ( virtual/httpd-cgi virtual/httpd-fastcgi ) >=app-admin/webapp-config-1.50.15
+DESC: PHP-based open-source platform and content management system
+EAPI: 5
+IUSE: +accelerator +mysql postgres sqlite +uploadprogress vhosts
+KEYWORDS: ~alpha ~amd64 ~ppc ~x86
+LICENSE: GPL-2
+MD5: adda945dff8df0c8389f52c5808cfcb8
+MTIME: 1396725367
+RDEPEND: dev-lang/php[gd,hash,pdo,simplexml,xml] virtual/httpd-php || ( ( <dev-lang/php-5.5 dev-php/pecl-apc ) dev-php/xcache dev-php/eaccelerator ( >=dev-lang/php-5.5[opcache] dev-php/pecl-apcu ) ) dev-php/pecl-uploadprogress || ( dev-lang/php[mysql] dev-lang/php[mysqli] ) >=app-admin/webapp-config-1.50.15
+SHA1: 47ae6da6766f8dfa345cfd63b33b392a2843f1f6
+SIZE: 2670911
+SLOT: 7.26
+USE: accelerator arm elibc_glibc kernel_linux mysql uploadprogress userland_GNU
+
+BUILD_TIME: 1396712207
+CPV: www-apps/owncloud-6.0.2
+DEFINED_PHASES: install postinst prepare prerm setup
+DEPEND: || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESC: Web-based storage application where all your data is under your own control
+EAPI: 5
+IUSE: +curl mysql postgres +sqlite vhosts
+KEYWORDS: ~amd64 ~arm ~x86
+LICENSE: AGPL-3
+MD5: 4f3ac986f7749705045443e968c8367e
+MTIME: 1396712342
+RDEPEND: dev-lang/php[curl,filter,gd,hash,json,mysql,pdo,simplexml,xmlwriter,zip] virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SHA1: 4eca1112c81d6869f47f5fb49c611be659dc85e2
+SIZE: 51472930
+SLOT: 6.0.2
+USE: arm curl elibc_glibc kernel_linux mysql userland_GNU
+
+BUILD_TIME: 1396647094
+CPV: www-apps/phpsysinfo-3.1.11
+DEFINED_PHASES: install postinst prerm setup
+DEPEND: || ( virtual/httpd-cgi virtual/httpd-fastcgi ) >=app-admin/webapp-config-1.50.15
+DESC: phpSysInfo is a nice package that will display your system stats via PHP
+EAPI: 5
+IUSE: vhosts
+KEYWORDS: ~amd64 ~hppa ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: b287f244a66f90b9abb4fd564768e7aa
+MTIME: 1396647119
+RDEPEND: virtual/httpd-php dev-lang/php[simplexml,xml,xsl(+),xslt(+),unicode] >=app-admin/webapp-config-1.50.15
+SHA1: c9f480e2e397383c4b2a90fa865e581015cf1a08
+SIZE: 655159
+SLOT: 3.1.11
 USE: arm elibc_glibc kernel_linux userland_GNU
 
 BUILD_TIME: 1396261630
